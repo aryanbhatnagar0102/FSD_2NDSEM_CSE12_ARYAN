@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Restaurant</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+        body{
+            background:#fff8f0;
+        }
+        nav{
+            background:#8B0000;
+            padding:15px 0;
+            position:sticky;
+            top:0;
+            z-index:1000;
+        }
+        nav ul{
+            list-style:none;
+            display:flex;
+            justify-content:center;
+        }
+        nav ul li{
+            margin:0 25px;
+        }
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            font-size:18px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+        nav ul li a:hover{
+            color:#ffd700;
+        }
+        .hero{
+            background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+            url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5") no-repeat center/cover;
+            height:90vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
+        .hero h1{
+            font-size:70px;
+            font-weight:bold;
+            text-transform:uppercase;
+            letter-spacing:3px;
+            background:linear-gradient(45deg, #ffd700, #ff4500, #ffffff);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;
+            text-shadow:0 0 20px rgba(255,215,0,0.8),
+                        0 0 40px rgba(255,69,0,0.6);
+            padding:20px 40px;
+            border:3px solid rgba(255,255,255,0.3);
+            border-radius:15px;
+            backdrop-filter:blur(5px);
+            animation:fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn{
+            from{
+                opacity:0;
+                transform:translateY(-30px);
+            }
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+        section{
+            padding:60px 20px;
+            text-align:center;
+        }
+        h2{
+            font-size:36px;
+            color:#8B0000;
+            margin-bottom:30px;
+        }
+        .menu-container{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:25px;
+        }
+        .menu-card{
+            width:300px;
+            background:white;
+            border-radius:12px;
+            overflow:hidden;
+            box-shadow:0 8px 20px rgba(0,0,0,0.2);
+            transition:transform 0.3s;
+        }
+        .menu-card:hover{
+            transform:translateY(-10px);
+        }
+        .menu-card img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+        }
+        .menu-card h3{
+            margin:15px 0 10px;
+            font-size:22px;
+        }
+        .menu-card p{
+            padding:0 15px 20px;
+            color:#555;
+        }
+        .btn{
+            background:#8B0000;
+            color:white;
+            padding:15px 35px;
+            font-size:18px;
+            border:none;
+            border-radius:30px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+        .btn:hover{
+            background:#ff4500;
+        }
+        .contact{
+            background:#8B0000;
+            color:white;
+            padding:50px 20px;
+        }
+        .contact p{
+            margin:10px 0;
+            font-size:18px;
+        }
+        footer{
+            background:black;
+            color:white;
+            text-align:center;
+            padding:12px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <h1>Welcome to Delicious Bites</h1>
+</div>
+
+<section id="menu">
+    <h2>Our Special Menu</h2>
+    <div class="menu-container">
+        <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Pizza">
+            <h3>Cheese Pizza</h3>
+            <p>Hot and cheesy pizza made with fresh ingredients.</p>
+        </div>
+        <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="Burger">
+            <h3>Classic Burger</h3>
+            <p>Juicy grilled burger served with crispy fries.</p>
+        </div>
+        <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Pasta">
+            <h3>Italian Pasta</h3>
+            <p>Creamy and delicious authentic Italian pasta.</p>
+        </div>
+        <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe" alt="Salad">
+            <h3>Fresh Salad</h3>
+            <p>Healthy and fresh green salad for a perfect meal.</p>
+        </div>
+    </div>
+</section>
+
+<section id="reservation">
+    <h2>Book a Table</h2>
+    <p>Reserve your table now for the best dining experience.</p>
+    <br>
+    <button class="btn">Make a Reservation</button>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> 123 Food Street, New Delhi, India</p>
+    <p><strong>Phone:</strong> +91 98765 43210</p>
+    <p><strong>Email:</strong> deliciousbites@gmail.com</p>
+    <p><strong>Opening Hours:</strong> 10:00 AM - 11:00 PM</p>
+</section>
+
+<footer>
+    <p>© 2026 Delicious Bites Restaurant | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
