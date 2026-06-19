@@ -1,39 +1,36 @@
-body { 
- margin: 0; 
- font-family: Arial, sans-serif; 
- background: #f4f4f4; 
-} 
-.counter-box { 
+.form-container { 
  width: 300px; 
- margin: 100px auto; 
- padding: 30px; 
- text-align: center; 
- background: white; 
- border-radius: 10px; 
- box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+ margin: 50px auto; 
+ padding: 20px; 
+ border: 1px solid #ccc; 
+ border-radius: 8px; 
 } 
-h1 { 
- margin-bottom: 20px; 
+ 
+input { 
+ display: block; 
+ width: 100%; 
+ margin-bottom: 10px; 
+ padding: 8px; 
+ box-sizing: border-box; 
 } 
-h2 { 
- font-size: 50px; 
- margin-bottom: 20px; 
-} 
-.pos { 
- color: green; 
-} 
-.neg { 
+ 
+.error { 
  color: red; 
+ font-size: 12px; 
+ display: block; 
+ margin-bottom: 10px; 
 } 
-.buttons button { 
- margin: 5px; 
- padding: 10px 15px; 
- border: none; 
- background: #007bff; 
+ 
+.success { 
+ color: green; 
+ font-weight: bold; 
+} 
+ 
+button { 
+ width: 100%; 
+ padding: 10px; 
+ background-color: #4caf50; 
  color: white; 
- border-radius: 5px; 
+ border: none; 
  cursor: pointer; 
-} 
-.buttons button:hover { 
- background: #0056b3; 
 }
